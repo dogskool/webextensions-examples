@@ -1,4 +1,44 @@
-const CSS = "body { border: 20px solid red; }";
+const CSS = "body { border: 20px solid red; }
+input[type='radio'] {
+        -webkit-appearance: none;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        outline: none;
+        border: 3px solid gray;
+    }
+
+    input[type='radio']:before {
+        content: '';
+        display: block;
+        width: 60%;
+        height: 60%;
+        margin: 20% auto;
+        border-radius: 50%;
+    }
+
+ input[type="radio"]:checked:before {
+        background: green;
+        
+    }
+    
+    input[type="radio"]:checked {
+      border-color:green;
+    }
+
+    .role {
+        margin-right: 80px;
+        margin-left: 20px;
+        font-weight: normal;
+    }
+
+    .checkbox label {
+        margin-bottom: 20px !important;
+    }
+
+    .roles {
+        margin-bottom: 40px;
+    }";
 const TITLE_APPLY = "Apply CSS";
 const TITLE_REMOVE = "Remove CSS";
 const APPLICABLE_PROTOCOLS = ["http:", "https:"];
